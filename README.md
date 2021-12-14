@@ -33,9 +33,7 @@ $G(s)=\frac{\theta_o(s)}{\theta_i(s)}=\frac {b_0}{a_1s+a_0}=\frac{b_0/a_0}{(a_1/
 
 - **Reposta**: $\theta_o = G[1-e^{(-t/\tau)}]$
 
- 
-
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled.png)
+![Untitled](../Imagens/Untitled.png)
 
 ### Entrada Rampa para Sistema de Primeira Ordem
 
