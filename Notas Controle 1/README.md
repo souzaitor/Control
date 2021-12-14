@@ -90,33 +90,23 @@ Característica da resposta de sistemas de 2ª ordem:
 
 **Amortecimento** 
 
-$ζ > 1$ 
+![](https://render.githubusercontent.com/render/math?math=%24%CE%B6%20%3E%201%24) : Super amortecida 
 
-$ζ = 1$
+![](https://render.githubusercontent.com/render/math?math=%24%CE%B6%20%3D%201%24) : Criticamente Amortecida
 
-$0 < ζ < 1$ 
+![](https://render.githubusercontent.com/render/math?math=%240%20%3C%20%CE%B6%20%3C%201%24) : Sub amortecida  
 
-$ζ = 0$
-
-**Classificação** 
-
-Super amortecida 
-
-Criticamente Amortecida 
-
-Sub amortecida 
-
-Não Amortecida
+![](https://render.githubusercontent.com/render/math?math=%24%CE%B6%20%3D%200%24) : Não Amortecida
 
 **Raízes**
 
-2, Reais
+2, Reais : Super amortecida 
 
-1, Reais iguais
+1, Reais iguais : Criticamente Amortecida
 
-2, Complexas
+2, Complexas : Sub amortecida  
 
-2, Complexas Puras
+2, Complexas Puras : Não Amortecida
 
  **Resposta**
 
@@ -132,90 +122,90 @@ $\theta_o=b_0[1-\sin\omega_nt]$
 
 ## Medidas de Desempenho Para Sistemas de Segunda Ordem
 
-- **Tempo de pico**  $\omega t_P$ = $\pi$  : Tempo gasto para a resposta ir de 0 ao primeiro valor de pico. Tempo para a resposta oscilatória completar um meio ciclo, $\pi$
+- **Tempo de pico**  ![](https://render.githubusercontent.com/render/math?math=%24%5Comega%20t_P%24%20%3D%20%24%5Cpi%24)  : Tempo gasto para a resposta ir de 0 ao primeiro valor de pico. Tempo para a resposta oscilatória completar um meio ciclo, ![](https://render.githubusercontent.com/render/math?math=%24%5Cpi%24)
 - **Sobre Sinal**: Quantidade máxima na qual a reposta ultrapassa o valor em regime permanente. Amplitude do primeiro pico.
-- **Sobre Sinal Percentual**   $\exp(\frac {-\zeta \pi} {\sqrt{(1-\zeta^2)}})\times100 \%$   : Porcentagem do valor em regime permanente
-- **Primeiro Sobre Sinal**:  $\theta_{ss}\exp(\frac {-\zeta \pi} {\sqrt{(1-\zeta^2)}})$
-- **Segundo Sobre Sinal**:  $\theta_{ss}\exp(\frac {-2\zeta \pi} {\sqrt{(1-\zeta^2)}})$
-- **Razão de Decaimento:  $\exp |\frac{-\zeta\pi}{\sqrt{(1-\zeta^2)}}|$  :** Indica a velocidade de decaimento, razão entre a amplitude do segundo sobre sinal e amplitude do primeiro sobre sinal
-- **Tempo de Estabilização** $t_s$  : Tempo gasto para que as oscilações desapareçam, resposta diminuir e ficar dentro de um percentual
-- **Tempo de Estabilização $t_s$ 2% do valor final:  $t_s$ = $4 / \zeta\omega_n$**
-- **Tempo de Estabilização $t_s$ 5% do valor final:  $t_s$ = $3 / \zeta\omega_n$**
-- **Período**: $2\pi$ / $\omega_n$
-- **Número de Oscilações** = tempo de estabilização / período : $2/\pi$ $\sqrt{(\frac{1}{\zeta^2}-1)}$
+- **Sobre Sinal Percentual**   ![](https://render.githubusercontent.com/render/math?math=%24%5Cexp(%5Cfrac%20%7B-%5Czeta%20%5Cpi%7D%20%7B%5Csqrt%7B(1-%5Czeta%5E2)%7D%7D)%5Ctimes100%20%5C%25%24)   : Porcentagem do valor em regime permanente
+- **Primeiro Sobre Sinal**:  ![](https://render.githubusercontent.com/render/math?math=%24%5Ctheta_%7Bss%7D%5Cexp(%5Cfrac%20%7B-%5Czeta%20%5Cpi%7D%20%7B%5Csqrt%7B(1-%5Czeta%5E2)%7D%7D)%24)
+- **Segundo Sobre Sinal**:  ![](https://render.githubusercontent.com/render/math?math=%24%5Ctheta_%7Bss%7D%5Cexp(%5Cfrac%20%7B-2%5Czeta%20%5Cpi%7D%20%7B%5Csqrt%7B(1-%5Czeta%5E2)%7D%7D)%24)
+- **Razão de Decaimento:  ![](https://render.githubusercontent.com/render/math?math=%24%5Cexp%20%7C%5Cfrac%7B-%5Czeta%5Cpi%7D%7B%5Csqrt%7B(1-%5Czeta%5E2)%7D%7D%7C%24)  :** Indica a velocidade de decaimento, razão entre a amplitude do segundo sobre sinal e amplitude do primeiro sobre sinal
+- **Tempo de Estabilização** ![](https://render.githubusercontent.com/render/math?math=%24t_s%24)  : Tempo gasto para que as oscilações desapareçam, resposta diminuir e ficar dentro de um percentual
+- **Tempo de Estabilização ![](https://render.githubusercontent.com/render/math?math=%24t_s%24) 2% do valor final:**  ![](https://render.githubusercontent.com/render/math?math=%24t_s%24%20%3D%20%244%20%2F%20%5Czeta%5Comega_n%24)
+- **Tempo de Estabilização ![](https://render.githubusercontent.com/render/math?math=%24t_s%24) 5% do valor final:**  ![](https://render.githubusercontent.com/render/math?math=%24t_s%24%20%3D%20%243%20%2F%20%5Czeta%5Comega_n%24)
+- **Período**: ![](https://render.githubusercontent.com/render/math?math=%242%5Cpi%24%20%2F%20%24%5Comega_n%24)
+- **Número de Oscilações** = tempo de estabilização / período : ![](https://render.githubusercontent.com/render/math?math=%242%2F%5Cpi%24%20%24%5Csqrt%7B(%5Cfrac%7B1%7D%7B%5Czeta%5E2%7D-1)%7D%24)
 
 ## Classificação dos Sistemas
 
 - O sistema em malha fechada é considerado tendo realimentação unitária
 - Os sistemas são classificados com base na função de transferência do ramo direto com realimentação unitária, a **função de transferência de malha aberta** de um sistema em malha fechada
-- A **função de transferência de malha aberta** de um sistema com função de transferência do ramo direto $G(s)$ e de realimentação $H(s)$ é calculada por:
+- A **função de transferência de malha aberta** de um sistema com função de transferência do ramo direto ![](https://render.githubusercontent.com/render/math?math=%24G(s)%24) e de realimentação ![](https://render.githubusercontent.com/render/math?math=%24H(s)%24) é calculada por:
 
-$G_o(s)=\frac{G(s)}{1+G(s)[H(s)-1]}$
+![](https://render.githubusercontent.com/render/math?math=%24G_o(s)%3D%5Cfrac%7BG(s)%7D%7B1%2BG(s)%5BH(s)-1%5D%7D%24)
 
 - A função de transferência de malha aberta de sistemas tem a **forma geral**:
 
-$\frac{K(s^m+a_{m-1}s^{m-1}+a_{m-2}s^{m-2}+...+a_1s+a_0)}{s^q(s^n+b_{n-1}s^{n-1}+b_{n-2}s^{n-2}+...+b_1s+b_0)}$
+![](https://render.githubusercontent.com/render/math?math=%24%5Cfrac%7BK(s%5Em%2Ba_%7Bm-1%7Ds%5E%7Bm-1%7D%2Ba_%7Bm-2%7Ds%5E%7Bm-2%7D%2B...%2Ba_1s%2Ba_0)%7D%7Bs%5Eq(s%5En%2Bb_%7Bn-1%7Ds%5E%7Bn-1%7D%2Bb_%7Bn-2%7Ds%5E%7Bn-2%7D%2B...%2Bb_1s%2Bb_0)%7D%24)
 
-- $q$ é o valor chamado **tipo** ou **classe do sistema.** Identifica o número de fatores $1/s$ na , ou número de integradores função de transferência de malha aberta
+- ![](https://render.githubusercontent.com/render/math?math=%24q%24) é o valor chamado **tipo** ou **classe do sistema.** Identifica o número de fatores  ![](https://render.githubusercontent.com/render/math?math=%241%2Fs%24) na , ou número de integradores função de transferência de malha aberta
 
 ## Erro em Regime Permanente
 
 - **Erro**: A diferença entre o sinal de saída de saída, a referência, e o sinal de saída real que ocorre no sistema:
 
-$E(s)=\theta_i(s)-\theta_o(s)$
+![](https://render.githubusercontent.com/render/math?math=%24E(s)%3D%5Ctheta_i(s)-%5Ctheta_o(s)%24)
 
 ![Untitled.png](../Imagens/Untitled%204.png)
 
 ### Classificação dos Sistemas
 
-- A **função de transferência de malha aberta** de um sistema com função de transferência do ramo direto $G(s)$ e de realimentação $H(s)$ é calculada por:
+- A **função de transferência de malha aberta** de um sistema com função de transferência do ramo direto ![](https://render.githubusercontent.com/render/math?math=%24G(s)%24) e de realimentação ![](https://render.githubusercontent.com/render/math?math=%24H(s)%24) é calculada por:
 
-$G_o(s)=\frac{G(s)}{1+G(s)[H(s)-1]}$
+![](https://render.githubusercontent.com/render/math?math=%24G_o(s)%3D%5Cfrac%7BG(s)%7D%7B1%2BG(s)%5BH(s)-1%5D%7D%24)
 
 - A função de transferência de malha aberta de sistemas tem a **forma geral**:
 
-$\frac{K(s^m+a_{m-1}s^{m-1}+a_{m-2}s^{m-2}+...+a_1s+a_0)}{s^q(s^n+b_{n-1}s^{n-1}+b_{n-2}s^{n-2}+...+b_1s+b_0)}$
+![](https://render.githubusercontent.com/render/math?math=%24%5Cfrac%7BK(s%5Em%2Ba_%7Bm-1%7Ds%5E%7Bm-1%7D%2Ba_%7Bm-2%7Ds%5E%7Bm-2%7D%2B...%2Ba_1s%2Ba_0)%7D%7Bs%5Eq(s%5En%2Bb_%7Bn-1%7Ds%5E%7Bn-1%7D%2Bb_%7Bn-2%7Ds%5E%7Bn-2%7D%2B...%2Bb_1s%2Bb_0)%7D%24)
 
-- $q$ é o valor chamado **tipo** ou **classe do sistema**
-- Identifica o **número de integradores** ou termos independentes s no denominador ($1/s$) na **função de transferência de malha aberta**
+- ![](https://render.githubusercontent.com/render/math?math=%24q%24) é o valor chamado **tipo** ou **classe do sistema**
+- Identifica o **número de integradores** ou termos independentes s no denominador (![](https://render.githubusercontent.com/render/math?math=%241%2Fs%24)) na **função de transferência de malha aberta**
 
 ### Erro em Regime Permanente para uma Entrada Degrau
 
-- $K_P$ é chamado **constante de erro de posição**, sem unidades:
+- ![](https://render.githubusercontent.com/render/math?math=%24K_P%24) é chamado **constante de erro de posição**, sem unidades:
 
-$K_P=\lim\limits_{s\to0}G_0(s)$
+![](https://render.githubusercontent.com/render/math?math=%24K_P%3D%5Clim%5Climits_%7Bs%5Cto0%7DG_0(s)%24)
 
 - O erro em regime permanente para um **sistema tipo 0** é:
 
-$e_{ss}=\frac1{1+K_P}$
+![](https://render.githubusercontent.com/render/math?math=%24e_%7Bss%7D%3D%5Cfrac1%7B1%2BK_P%7D%24)
 
 - Para sistemas de tipo maiores o **erro em regime permanente** é 0
 
 ### Erro em Regime Permanente para uma Entrada Rampa
 
-- $K_V$ é chamado **constante de erro de erro de velocidade**, e tem unidade $s^{-1}$:
+- ![](https://render.githubusercontent.com/render/math?math=%24K_V%24) é chamado **constante de erro de erro de velocidade**, e tem unidade ![](https://render.githubusercontent.com/render/math?math=%24s%5E%7B-1%7D%24):
 
-$K_V=\lim\limits_{s\to0}sG_0(s)$
+![](https://render.githubusercontent.com/render/math?math=%24K_V%3D%5Clim%5Climits_%7Bs%5Cto0%7DsG_0(s)%24)
 
-- Para um entrada rampa com uma razão de variação com o tempo de uma constante $A$, o erro em regime permanente para o **sistema tipo 1** é:
+- Para um entrada rampa com uma razão de variação com o tempo de uma constante ![](https://render.githubusercontent.com/render/math?math=%24A%24), o erro em regime permanente para o **sistema tipo 1** é:
 
- $e_{ss}=\frac A{K_V}$
+![](https://render.githubusercontent.com/render/math?math=%20%24e_%7Bss%7D%3D%5Cfrac%20A%7BK_V%7D%24)
 
 - Para sistemas de tipo maiores o **erro em regime permanente** é 0
-- Para sistemas de tipo 1 o **erro em regime permanente** é $\infin$
+- Para sistemas de tipo 1 o **erro em regime permanente** é ![](https://render.githubusercontent.com/render/math?math=%24%5Cinfin%24)
 
 ### Erro em Regime Permanente para uma Entrada Parabólica
 
-- $K_A$ é chamado **constante de erro de erro de aceleração**, e tem unidade $s^{-2}$:
+- ![](https://render.githubusercontent.com/render/math?math=%24K_A%24) é chamado **constante de erro de erro de aceleração**, e tem unidade ![](https://render.githubusercontent.com/render/math?math=%24s%5E%7B-2%7D%24):
 
-$K_A=\lim\limits_{s\to0}s^2G_0(s)$
+![](https://render.githubusercontent.com/render/math?math=%24K_A%3D%5Clim%5Climits_%7Bs%5Cto0%7Ds%5E2G_0(s)%24)
 
-- Se a entrada é parabólica da forma $\frac A{s^3}$, onde $A$ é uma constante, o erro em regime permanente para o **sistema tipo 2** é:
+- Se a entrada é parabólica da forma ![](https://render.githubusercontent.com/render/math?math=%24%5Cfrac%20A%7Bs%5E3%7D%24), onde ![](https://render.githubusercontent.com/render/math?math=%24A%24) é uma constante, o erro em regime permanente para o **sistema tipo 2** é:
 
-$e_{ss}=\frac A{K_A}$
+![](https://render.githubusercontent.com/render/math?math=%24e_%7Bss%7D%3D%5Cfrac%20A%7BK_A%7D%24)
 
 - Para sistemas de tipo maiores o **erro em regime permanente** é 0
-- Para sistemas de tipo menores o **erro em regime permanente** é $\infin$
+- Para sistemas de tipo menores o **erro em regime permanente** é ![](https://render.githubusercontent.com/render/math?math=%24%5Cinfin%24)
 
 ### Erro em Regime Permanente para Entradas Diferentes
 
@@ -225,18 +215,18 @@ $e_{ss}=\frac A{K_A}$
 
 - A função de transferência em malha fechada pode ser representada como:
 
-$G(s)=\frac{K(s+z_1)(s+z_2)...(s+z_m)}{(s+p_1)(s+p_2)...(s+p_n)}$
+![](https://render.githubusercontent.com/render/math?math=%24G(s)%3D%5Cfrac%7BK(s%2Bz_1)(s%2Bz_2)...(s%2Bz_m)%7D%7B(s%2Bp_1)(s%2Bp_2)...(s%2Bp_n)%7D%24)
 
-- Os **zeros** são as raízes $-z_1$,$-z_2$,...,$-z_m$ do numerador e os valores de s para os quais a função de transferência é zero
-- Os **pólos** são as raízes $-p_1$,$-p_2$,...,$-p_n$ do denominador e os valores de s para os quais a função de transferência é infinita
+- Os **zeros** são as raízes ![](https://render.githubusercontent.com/render/math?math=%24-z_1%24%2C%24-z_2%24%2C...%2C%24-z_m%24) do numerador e os valores de s para os quais a função de transferência é zero
+- Os **pólos** são as raízes ![](https://render.githubusercontent.com/render/math?math=%24-p_1%24%2C%24-p_2%24%2C...%2C%24-p_n%24) do denominador e os valores de s para os quais a função de transferência é infinita
 
 ### Diagrama de Pólos e Zeros
 
 - Forma de representar os pólos e zeros de uma função de transferência
 - O eixo x é a parte real e o eixo y é a parte imaginária
-- A posição de um **pólo** é marcada por um $X$
-- A posição de um **zero** é marcada por um $O$
-- O gráfico bidimensional é chamado plano $s$
+- A posição de um **pólo** é marcada por um ![](https://render.githubusercontent.com/render/math?math=%24X%24)
+- A posição de um **zero** é marcada por um ![](https://render.githubusercontent.com/render/math?math=%24O%24)
+- O gráfico bidimensional é chamado plano ![](https://render.githubusercontent.com/render/math?math=%24s%24)
 
 ![Untitled](../Imagens/Untitled%205.png)
 
@@ -263,11 +253,11 @@ $G(s)=\frac{K(s+z_1)(s+z_2)...(s+z_m)}{(s+p_1)(s+p_2)...(s+p_n)}$
 
 ## Controle Proporcional
 
-- A saída do controlador é proporcional ao erro e a **constante de ganho proporcional, $K_P$.** Depende apenas da amplitude do erro no instante de tempo
+- A saída do controlador é proporcional ao erro e a **constante de ganho proporcional, ![](https://render.githubusercontent.com/render/math?math=%24K_P%24).** Depende apenas da amplitude do erro no instante de tempo
 
-$\text{Saída}=K_Pe$
+![](https://render.githubusercontent.com/render/math?math=%24%5Ctext%7BSa%C3%ADda%7D%3DK_Pe%24)
 
-- **Função de Transferência do Controlador**: $G_C(s)=K_P$
+- **Função de Transferência do Controlador**: ![](https://render.githubusercontent.com/render/math?math=%24G_C(s)%3DK_P%24)
 - O controlador é um amplificador com ganho constante
 - Um ganho constante tende a existir somente para uma certa faixa de erros, chamada **banda proporcional**
 
@@ -277,17 +267,17 @@ $\text{Saída}=K_Pe$
 
 ![Untitled](../Imagens/Untitled%2010.png)
 
-- **Função de Transferência**: $G_o(s)=K_PG_P(s)$
+- **Função de Transferência**: ![](https://render.githubusercontent.com/render/math?math=%24G_o(s)%3DK_PG_P(s)%24)
 - Altera os pólos da função
-- **Desvantagem**: O controlador não introduz o termo $1/s$ no ramo direto → Se o sistema é do tipo 0, continua sendo do tipo 0 → Continua com erro em regime permanente
+- **Desvantagem**: O controlador não introduz o termo ![](https://render.githubusercontent.com/render/math?math=%241%2Fs%24) no ramo direto → Se o sistema é do tipo 0, continua sendo do tipo 0 → Continua com erro em regime permanente
 
 ## Controle Integral
 
-- A saída do controlador é proporcional à integral do sinal do erro e a **constante de ganho integral, $K_I$.** Tem unidade $s^{-1}$
+- A saída do controlador é proporcional à integral do sinal do erro e a **constante de ganho integral, ![](https://render.githubusercontent.com/render/math?math=%24K_I%24).** Tem unidade ![](https://render.githubusercontent.com/render/math?math=%24s%5E%7B-1%7D%24)
 
-$\text{Saída}=K_I\int\limits_0^1e \space dt$
+![](https://render.githubusercontent.com/render/math?math=%24%5Ctext%7BSa%C3%ADda%7D%3DK_I%5Cint%5Climits_0%5E1e%20%5Cspace%20dt%24)
 
-- **Função de Transferência do Controlador**: $G_C(s)=\frac{K_I}{s}$
+- **Função de Transferência do Controlador**: ![](https://render.githubusercontent.com/render/math?math=%24G_C(s)%3D%5Cfrac%7BK_I%7D%7Bs%7D%24)
 - A integral é a área da curva do sinal do erro e aumenta de maneira regular a medida que o erro aumenta
 - A saída é proporcional ao acúmulo de efeitos de erros em momentos anteriores
 
@@ -297,8 +287,8 @@ $\text{Saída}=K_I\int\limits_0^1e \space dt$
 
 ![Untitled](../Imagens/Untitled%2012.png)
 
-- **Função de Transferência**: $G_o(s)=(\frac{K_I}{s})G_P(s)$
-- **Vantagem**: O controlador introduz o termo $1/s$ no ramo direto → Aumenta o tipo do sistema em 1 → Se o sistema é do tipo 0, o erro em regime permanente desaparece para uma entrada degrau
+- **Função de Transferência**: ![](https://render.githubusercontent.com/render/math?math=%24G_o(s)%3D(%5Cfrac%7BK_I%7D%7Bs%7D)G_P(s)%24)
+- **Vantagem**: O controlador introduz o termo ![](https://render.githubusercontent.com/render/math?math=%241%2Fs%24) no ramo direto → Aumenta o tipo do sistema em 1 → Se o sistema é do tipo 0, o erro em regime permanente desaparece para uma entrada degrau
 - **Desvantagem**: Introdução de um pólo na origem, a assíntotas da raízes apontam mais em direção ao semi plano direito to plano s, ou seja, a **estabilidade** relativa fica **reduzida**
 
 ## Controle Proporcional + Integral
@@ -323,7 +313,7 @@ $\text{Saída}=K_I\int\limits_0^1e \space dt$
 
 ## Controle Derivativo
 
-- A saída do controlador é proporcional à taxa de variação do sinal do erro e a **constante de ganho derivativo, $K_D$.** Tem unidade ![](https://render.githubusercontent.com/render/math?math=%24s%24)
+- A saída do controlador é proporcional à taxa de variação do sinal do erro e a **constante de ganho derivativo, ![](https://render.githubusercontent.com/render/math?math=%24K_D%24).** Tem unidade ![](https://render.githubusercontent.com/render/math?math=%24s%24)
 
 ![](https://render.githubusercontent.com/render/math?math=%24%5Ctext%7BSa%C3%ADda%7D%3DK_I%5Cint%5Climits_0%5E1e%20%5Cspace%20dt%24)
 
