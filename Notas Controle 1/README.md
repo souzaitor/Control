@@ -1,4 +1,4 @@
-# Resumo Disciplina
+
 
 Data: 17/08/2021
 Disciplina: Controle 1
@@ -6,15 +6,48 @@ Semana: Resumo
 
 ## Sumário
 
+- [Funções de Transferência de Elementos Dinâmicos](#funções-de-transferência-de-elementos-dinâmicos)
+- [Elementos de Primeira e Segunda Ordens](#elementos-de-primeira-e-segunda-ordens)
+- [Sistemas de Primeira Ordem](#sistemas-de-primeira-ordem)
+  * [Entrada Degrau para Sistema de Primeira Ordem](#entrada-degrau-para-sistema-de-primeira-ordem)
+  * [Entrada Rampa para Sistema de Primeira Ordem](#entrada-rampa-para-sistema-de-primeira-ordem)
+  * [Entrada Impulso para um Sistema de Primeira Ordem](#entrada-impulso-para-um-sistema-de-primeira-ordem)
+- [Sistemas de Segunda Ordem](#sistemas-de-segunda-ordem)
+  * [Entrada Degrau para Sistema de Segunda Ordem](#entrada-degrau-para-sistema-de-segunda-ordem)
+- [Medidas de Desempenho Para Sistemas de Segunda Ordem](#medidas-de-desempenho-para-sistemas-de-segunda-ordem)
+- [Classificação dos Sistemas](#classificação-dos-sistemas)
+- [Erro em Regime Permanente](#erro-em-regime-permanente)
+  * [Classificação dos Sistemas](#classificação-dos-sistemas-1)
+  * [Erro em Regime Permanente para uma Entrada Degrau](#erro-em-regime-permanente-para-uma-entrada-degrau)
+  * [Erro em Regime Permanente para uma Entrada Rampa](#erro-em-regime-permanente-para-uma-entrada-rampa)
+  * [Erro em Regime Permanente para uma Entrada Parabólica](#erro-em-regime-permanente-para-uma-entrada-parabólica)
+  * [Erro em Regime Permanente para Entradas Diferentes](#erro-em-regime-permanente-para-entradas-diferentes)
+- [Pólos e Zeros](#pólos-e-zeros)
+  * [Diagrama de Pólos e Zeros](#diagrama-de-pólos-e-zeros)
+- [Estabilidade](#estabilidade)
+  * [Saídas para diferentes Pólos a uma Entrada Impulso](#saídas-para-diferentes-pólos-a-uma-entrada-impulso)
+  * [Saídas para diferentes Pólos a uma Entrada Degrau](#saídas-para-diferentes-pólos-a-uma-entrada-degrau)
+- [Controle Proporcional](#controle-proporcional)
+- [Controle Integral](#controle-integral)
+- [Controle Proporcional + Integral](#controle-proporcional+integral)
+- [Controle Derivativo](#controle-derivativo)
+- [Controle Proporcional + Derivativo](#Controle-Proporcional-Derivativo)
+- [Controle PID](#controle-pid)
+- [Ajustes de Ganho de Controlador](#ajustes-de-ganho-de-controlador)
+  * [Método da Curva de Reação do Processo](#método-da-curva-de-reação-do-processo)
+  * [Método do Ciclo Máximo](#método-do-ciclo-máximo)
+- [Realimentação de Velocidade](#realimentação-de-velocidade)
+- [Parâmetros](#parâmetros)
+
 ## Funções de Transferência de Elementos Dinâmicos
 
-$a_2d^2\frac {\theta_0}{dt^2}+a_1\frac{d\theta_0}{dt}+a_0\theta_0=b_1\theta_i$
+![](https://render.githubusercontent.com/render/math?math=%24a_2d%5E2%5Cfrac%20%7B%5Ctheta_0%7D%7Bdt%5E2%7D%2Ba_1%5Cfrac%7Bd%5Ctheta_0%7D%7Bdt%7D%2Ba_0%5Ctheta_0%3Db_1%5Ctheta_i%24)
 
-- A **função de transferência** $G(s)$ de um sistema linear que descreve o comportamento dinâmico é definia como a ração da transformada de Laplace da variável de saída $\theta_0(s)$ pela transformada de Laplace da variável de entrada $\theta_i(s)$:
+- A **função de transferência**  ![](https://render.githubusercontent.com/render/math?math=%24G(s)%24) de um sistema linear que descreve o comportamento dinâmico é definia como a fração da transformada de Laplace da variável de saída ![](https://render.githubusercontent.com/render/math?math=%24%5Ctheta_0(s)%24) pela transformada de Laplace da variável de entrada ![](https://render.githubusercontent.com/render/math?math=%24%5Ctheta_i(s)%24):
 
-$G(s)=\frac{\theta_0}{\theta_i}=\frac{b_1}{a_2s+a_1s+a_0}$
+![](https://render.githubusercontent.com/render/math?math=%24G(s)%3D%5Cfrac%7B%5Ctheta_0%7D%7B%5Ctheta_i%7D%3D%5Cfrac%7Bb_1%7D%7Ba_2s%2Ba_1s%2Ba_0%7D%24)
 
-[Voltar ao Topo](https://www.notion.so/Resumo-Disciplina-f6daa7f509974998b4d0e7f46c2629f2)
+[Voltar ao Topo](#Sumário)
 
 ## Elementos de Primeira e Segunda Ordens
 
@@ -23,35 +56,33 @@ $G(s)=\frac{\theta_0}{\theta_i}=\frac{b_1}{a_2s+a_1s+a_0}$
 
 - **Forma Geral Sistema de Segunda Ordem no domínio s**:
 
-$G(s)=\frac{\theta_o(s)}{\theta_i(s)}=\frac{b_0}{a_2s^2+a_1s+a_0}=\frac{(b_0/a_0)}{(a_2/a_0)s^2+(a_1/a_0)s+1}=\frac{b_0\omega_n^2}{s^2+2\zeta\omega_ns+\omega_n^2}$
+![](https://render.githubusercontent.com/render/math?math=%24G(s)%3D%5Cfrac%7B%5Ctheta_o(s)%7D%7B%5Ctheta_i(s)%7D%3D%5Cfrac%7Bb_0%7D%7Ba_2s%5E2%2Ba_1s%2Ba_0%7D%3D%5Cfrac%7B(b_0%2Fa_0)%7D%7B(a_2%2Fa_0)s%5E2%2B(a_1%2Fa_0)s%2B1%7D%3D%5Cfrac%7Bb_0%5Comega_n%5E2%7D%7Bs%5E2%2B2%5Czeta%5Comega_ns%2B%5Comega_n%5E2%7D%24)
 
 ## Sistemas de Primeira Ordem
 
-$G(s)=\frac{\theta_o(s)}{\theta_i(s)}=\frac {b_0}{a_1s+a_0}=\frac{b_0/a_0}{(a_1/a_0)+1}=\frac{G}{\tau s+1}$
+![](https://render.githubusercontent.com/render/math?math=%24G(s)%3D%5Cfrac%7B%5Ctheta_o(s)%7D%7B%5Ctheta_i(s)%7D%3D%5Cfrac%20%7Bb_0%7D%7Ba_1s%2Ba_0%7D%3D%5Cfrac%7Bb_0%2Fa_0%7D%7B(a_1%2Fa_0)%2B1%7D%3D%5Cfrac%7BG%7D%7B%5Ctau%20s%2B1%7D%24)
 
 ### Entrada Degrau para Sistema de Primeira Ordem
 
-- **Reposta**: $\theta_o = G[1-e^{(-t/\tau)}]$
-
- 
+- **Reposta**: ![](https://render.githubusercontent.com/render/math?math=%24%5Ctheta_o%20%3D%20G%5B1-e%5E%7B(-t%2F%5Ctau)%7D%5D%24)
 
 ![Untitled](../Imagens/Untitled.png)
 
 ### Entrada Rampa para Sistema de Primeira Ordem
 
-- **Reposta**: $\theta_o = G[t-\tau(1-e^{-t/\tau})]$
+- **Reposta**: ![](https://render.githubusercontent.com/render/math?math=%24%5Ctheta_o%20%3D%20G%5Bt-%5Ctau(1-e%5E%7B-t%2F%5Ctau%7D)%5D%24)
 
 ![Untitled](../Imagens/Untitled%201.png)
 
 ### Entrada Impulso para um Sistema de Primeira Ordem
 
-- **Resposta:** $\theta_o = G(1/\tau)e^{-t/\tau}$
+- **Resposta:** ![](https://render.githubusercontent.com/render/math?math=%24%5Ctheta_o%20%3D%20G(1%2F%5Ctau)e%5E%7B-t%2F%5Ctau%7D%24)
 
 ![Untitled](../Imagens/Untitled%202.png)
 
 ## Sistemas de Segunda Ordem
 
-$G(s)=\frac{\theta_o(s)}{\theta_i(s)}=\frac{b_0}{a_2s^2+a_1s+a_0}=\frac{(b_0/a_0)}{(a_2/a_0)s^2+(a_1/a_0)s+1}=\frac{b_0\omega_n^2}{s^2+2\zeta\omega_ns+\omega_n^2}$
+![](https://render.githubusercontent.com/render/math?math=%24G(s)%3D%5Cfrac%7B%5Ctheta_o(s)%7D%7B%5Ctheta_i(s)%7D%3D%5Cfrac%7Bb_0%7D%7Ba_2s%5E2%2Ba_1s%2Ba_0%7D%3D%5Cfrac%7B(b_0%2Fa_0)%7D%7B(a_2%2Fa_0)s%5E2%2B(a_1%2Fa_0)s%2B1%7D%3D%5Cfrac%7Bb_0%5Comega_n%5E2%7D%7Bs%5E2%2B2%5Czeta%5Comega_ns%2B%5Comega_n%5E2%7D%24)
 
 ### Entrada Degrau para Sistema de Segunda Ordem
 
@@ -274,10 +305,10 @@ $\text{Saída}=K_I\int\limits_0^1e \space dt$
 
 - A redução na estabilidade relativa resultante do controle integral pode ser resolvida pela ação de controle proporcional mais integral
 
-$\text{Saída}=K_Pe+K_I\int\limits_0^tedt$
+![](https://render.githubusercontent.com/render/math?math=%24%5Ctext%7BSa%C3%ADda%7D%3DK_Pe%2BK_I%5Cint%5Climits_0%5Etedt%24)
 
-- **Função de Transferência do Controlador**: $G_C(s)=\frac{K_P[s+(K_I/K_P)]}{s}$
-- $\tau_I=K_P/K_I$ é a **constante de tempo integral**
+- **Função de Transferência do Controlador**: ![](https://render.githubusercontent.com/render/math?math=%24G_C(s)%3D%5Cfrac%7BK_P%5Bs%2B(K_I%2FK_P)%5D%7D%7Bs%7D%24)
+- ![](https://render.githubusercontent.com/render/math?math=%24%5Ctau_I%3DK_P%2FK_I%24) é a **constante de tempo integral**
 - A saída do controlador quando existe um erro em degrau
 
 ![Untitled](../Imagens/Untitled%2013.png)
@@ -286,17 +317,17 @@ $\text{Saída}=K_Pe+K_I\int\limits_0^tedt$
 
 ![Untitled](../Imagens/Untitled%2014.png)
 
-- **Função de Transferência**: $G_o(s)=(\frac{K_P[s+(1/\tau_I)]}{s})G_P(s)$
-- **Vantagem**: O fator $1/s$ aumenta o tipo do sistema para 1 e  remove a possibilidade de um erro em regime permanente para uma entrada degrau
+- **Função de Transferência**: ![](https://render.githubusercontent.com/render/math?math=%24G_o(s)%3D(%5Cfrac%7BK_P%5Bs%2B(1%2F%5Ctau_I)%5D%7D%7Bs%7D)G_P(s)%24)
+- **Vantagem**: O fator ![](https://render.githubusercontent.com/render/math?math=%241%2Fs%24) aumenta o tipo do sistema para 1 e  remove a possibilidade de um erro em regime permanente para uma entrada degrau
 - **Desvantagem**: Redução da estabilidade relativa, mas não é tão grande no caso do controle integral sozinho
 
 ## Controle Derivativo
 
-- A saída do controlador é proporcional à taxa de variação do sinal do erro e a **constante de ganho derivativo, $K_D$.** Tem unidade $s$
+- A saída do controlador é proporcional à taxa de variação do sinal do erro e a **constante de ganho derivativo, $K_D$.** Tem unidade ![](https://render.githubusercontent.com/render/math?math=%24s%24)
 
-$\text{Saída}=K_I\int\limits_0^1e \space dt$
+![](https://render.githubusercontent.com/render/math?math=%24%5Ctext%7BSa%C3%ADda%7D%3DK_I%5Cint%5Climits_0%5E1e%20%5Cspace%20dt%24)
 
-- **Função de Transferência do Controlador**: $G_C(s)=K_Ds$
+- **Função de Transferência do Controlador**: ![](https://render.githubusercontent.com/render/math?math=%24G_C(s)%3DK_Ds%24)
 - O controle derivativo é insensível a sinais de erro constantes ou de variação lenta, é usado em combinação com outras formas de controle
 - A saída é proporcional à taxa de variação do erro
 
@@ -306,23 +337,23 @@ $\text{Saída}=K_I\int\limits_0^1e \space dt$
 
 ![Untitled](../Imagens/Untitled%2016.png)
 
-- **Função de Transferência**: $G_o(s)=\frac{K_DG_P(s)}{1+K_DsG_P(s)}$
+- **Função de Transferência**: ![](https://render.githubusercontent.com/render/math?math=%24G_o(s)%3D%5Cfrac%7BK_DG_P(s)%7D%7B1%2BK_DsG_P(s)%7D%24)
 - **Vantagem**: Usado com outras formas de controle, aumenta a velocidade de correção da resposta de um sistema ao erro
-- **Desvantagem**: Cancela um termo $1/s$ e reduz a ordem do sistema em 1
+- **Desvantagem**: Cancela um termo ![](https://render.githubusercontent.com/render/math?math=%241%2Fs%24) e reduz a ordem do sistema em 1
 
-- Na prática, um controle derivativo é obtido usando um **compensador em avanço**. O controlador tem função de transferência: $K(s+z)/(s+p), \text{com } p>z$
+- Na prática, um controle derivativo é obtido usando um **compensador em avanço**. O controlador tem função de transferência: ![](https://render.githubusercontent.com/render/math?math=%24K(s%2Bz)%2F(s%2Bp)%2C%20%5Ctext%7Bcom%20%7D%20p%3Ez%24)
 
 ## Controle Proporcional + Derivativo
 
-- **Função de Transferência**: $G_O(s)=(K_P+K_Ds)G_P(s)=K_D[(1/\tau_D)+s]G_P(s)$
-- $\tau_D=K_P/K_D$ é a **constante de tempo derivativo**
-- Um zero é introduzido em $s=-1\tau_D$
+- **Função de Transferência**: ![](https://render.githubusercontent.com/render/math?math=%24G_O(s)%3D(K_P%2BK_Ds)G_P(s)%3DK_D%5B(1%2F%5Ctau_D)%2Bs%5DG_P(s)%24)
+- ![](https://render.githubusercontent.com/render/math?math=%24%5Ctau_D%3DK_P%2FK_D%24) é a **constante de tempo derivativo**
+- Um zero é introduzido em ![](https://render.githubusercontent.com/render/math?math=%24s%3D-1%5Ctau_D%24)
 - Sem mudanças no tipo do sistemas e no erro permanente
 - **Sistema com Controle Proporcional + Derivativo:**
 
 ![Untitled](../Imagens/Untitled%2017.png)
 
-[Voltar ao Topo](https://www.notion.so/Resumo-Disciplina-f6daa7f509974998b4d0e7f46c2629f2)
+[Voltar ao Topo](#Sumário)
 
 ## Controle PID
 
@@ -330,17 +361,17 @@ $\text{Saída}=K_I\int\limits_0^1e \space dt$
 
 ![Untitled](../Imagens/Untitled%2018.png)
 
-Tem saída: $K_Pe+K_I\int\limits_{0}^{1}edt+K_D\frac{de}{dt}$
+Tem saída: ![](https://render.githubusercontent.com/render/math?math=%24K_Pe%2BK_I%5Cint%5Climits_%7B0%7D%5E%7B1%7Dedt%2BK_D%5Cfrac%7Bde%7D%7Bdt%7D%24)
 
-- **Função de Transferência do Controlador**: $G_C(s)=K_P+\frac{K_I}{s}+K_Ds$
+- **Função de Transferência do Controlador**: ![](https://render.githubusercontent.com/render/math?math=%24G_C(s)%3DK_P%2B%5Cfrac%7BK_I%7D%7Bs%7D%2BK_Ds%24)
 
-Como a constante de tempo integral $\tau_i$ é $K_P/K_I$ e a constante de tempo derivatia $\tau_D$ é $K_P/K_D$, então:
+Como a constante de tempo integral ![](https://render.githubusercontent.com/render/math?math=%24%5Ctau_i%24) é  ![](https://render.githubusercontent.com/render/math?math=%24K_P%2FK_I%24) e a constante de tempo derivatia ![](https://render.githubusercontent.com/render/math?math=%24%5Ctau_D%24%20%C3%A9%20%24K_P%2FK_D%24), então:
 
-- **Função de Transferência do Controlador**: $G_C(s)=K_P(1+\frac{1}{\tau_is}+\tau_Ds$
-- **Função de Transferência de Malha Aberta**: $G_O(s)=\frac{K_P(\tau_iS+1+\tau_i\tau_ds^2))G_P(s)}{\tau_is}$
+- **Função de Transferência do Controlador**: ![](https://render.githubusercontent.com/render/math?math=%24G_C(s)%3DK_P(1%2B%5Cfrac%7B1%7D%7B%5Ctau_is%7D%2B%5Ctau_Ds%24)
+- **Função de Transferência de Malha Aberta**: ![](https://render.githubusercontent.com/render/math?math=%24G_O(s)%3D%5Cfrac%7BK_P(%5Ctau_iS%2B1%2B%5Ctau_i%5Ctau_ds%5E2))G_P(s)%7D%7B%5Ctau_is%7D%24)
 
 - O controlador PID aumenta em 2 o número de zeros e de 1 o número de pólos.
-- O fator $1/s$  aumenta o tipo de 1
+- O fator  ![](https://render.githubusercontent.com/render/math?math=%241%2Fs%24)  aumenta o tipo de 1
 - Na prática, é utilizado um compensador em avanço e não um controlador PID ideal
 
 ## Ajustes de Ganho de Controlador
@@ -366,9 +397,9 @@ Como a constante de tempo integral $\tau_i$ é $K_P/K_I$ e a constante de tempo 
 ### Método do Ciclo Máximo
 
 - As ações derivativas e integrativas são reduzidas para seus valores mínimos
-- $K_P$ é ajustada para um valor baixo e então é gradualmente aumentada
+- ![](https://render.githubusercontent.com/render/math?math=%24K_P%24) é ajustada para um valor baixo e então é gradualmente aumentada
 - Pequenos são distúrbios são aplicados enquanto isso, até gerar oscilações
-- O valor crítico da constante $K_{PC}$ é o observado e o período $T_C$ das oscilações
+- O valor crítico da constante ![](https://render.githubusercontent.com/render/math?math=%24K_%7BPC%7D%24) é o observado e o período ![](https://render.githubusercontent.com/render/math?math=%24T_C%24) das oscilações
 
 ![Untitled](../Imagens/Untitled%2021.png)
 
@@ -376,17 +407,19 @@ Como a constante de tempo integral $\tau_i$ é $K_P/K_I$ e a constante de tempo 
 
 - Sistemas envolvendo o posicionamento de algum objeto, por exemplo, o braço de um robô, uma característica importante é o sistema responder rapidamente a erros e não produzir oscilações excessivas ou sobre-sinais
 - Isso pode ser obtido inserindo um ramo de realimentação dentro do ramo de realimentação principal, a chama realimentação de velocidade
-- A saída do ramo de realimentação está ligado é relacionada com a entrada por: $\text{Saída}=K_V\frac{d\theta_o}{dt}$
-- **Função de Transferência de Realimentação**: $H(s)=K_Vs$
-- $K_V$ é uma constante, o ganho da realimentação
+- A saída do ramo de realimentação está ligado é relacionada com a entrada por: ![](https://render.githubusercontent.com/render/math?math=%24%5Ctext%7BSa%C3%ADda%7D%3DK_V%5Cfrac%7Bd%5Ctheta_o%7D%7Bdt%7D%24)
+- **Função de Transferência de Realimentação**: ![](https://render.githubusercontent.com/render/math?math=%24H(s)%3DK_Vs%24)
+- ![](https://render.githubusercontent.com/render/math?math=%24K_V%24) é uma constante, o ganho da realimentação
 - **Realimentação de Posição** é usada para designar realimentação do valor da saída, os termos aparecem de denominações anteriores para sistemas de controle de posição de objetos
 
 ![Untitled](../Imagens/Untitled%2022.png)
 
-- A **realimentação de velocidade** introduz  um termo $G_P(s)K_Vs$ no denominador, e portanto, na equação característica. A estabilidade relativa aumenta, o amortecimento aumentou para a mesma frequência angular natural, e esta aumentou para o mesmo amortecimento
-- O **sobre sinal percentual** é: $\exp{(\frac{-\cos\phi}{\sqrt{1-\cos^2\phi}})}\times100\%=\exp{(\frac{1}{\tg\phi})}\times100\%$
-- Incluir a realimentação de velocidade reduz $\phi$ para um valor particular de frequência angular natural → Uma redução na $\tg\phi$ e no sobre sinal
+- A **realimentação de velocidade** introduz  um termo ![](https://render.githubusercontent.com/render/math?math=%24G_P(s)K_Vs%24) no denominador, e portanto, na equação característica. A estabilidade relativa aumenta, o amortecimento aumentou para a mesma frequência angular natural, e esta aumentou para o mesmo amortecimento
+- O **sobre sinal percentual** é: ![](https://render.githubusercontent.com/render/math?math=%24%5Cexp%7B(%5Cfrac%7B-%5Ccos%5Cphi%7D%7B%5Csqrt%7B1-%5Ccos%5E2%5Cphi%7D%7D)%7D%5Ctimes100%5C%25%3D%5Cexp%7B(%5Cfrac%7B1%7D%7B%5Ctg%5Cphi%7D)%7D%5Ctimes100%5C%25%24)
+- Incluir a realimentação de velocidade reduz ![](https://render.githubusercontent.com/render/math?math=%24%5Cphi%24) para um valor particular de frequência angular natural → Uma redução na ![](https://render.githubusercontent.com/render/math?math=%24%5Ctg%5Cphi%24) e no sobre sinal
 
 ## Parâmetros
 
 ![Untitled](../Imagens/Untitled%2023.png)
+
+[Voltar ao Topo](#Sumário)
