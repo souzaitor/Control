@@ -48,7 +48,6 @@ Semana: Resumo
 ![](https://render.githubusercontent.com/render/math?math=%24G(s)%3D%5Cfrac%7B%5Ctheta_0%7D%7B%5Ctheta_i%7D%3D%5Cfrac%7Bb_1%7D%7Ba_2s%2Ba_1s%2Ba_0%7D%24)
 
 [Voltar ao Topo](#Sumário)
-
 ## Elementos de Primeira e Segunda Ordens
 
 - **Ordem do sistema**: A mais alta potência da derivada na equação diferencial ou a mais alta potência de s no denominador
@@ -58,6 +57,7 @@ Semana: Resumo
 
 ![](https://render.githubusercontent.com/render/math?math=%24G(s)%3D%5Cfrac%7B%5Ctheta_o(s)%7D%7B%5Ctheta_i(s)%7D%3D%5Cfrac%7Bb_0%7D%7Ba_2s%5E2%2Ba_1s%2Ba_0%7D%3D%5Cfrac%7B(b_0%2Fa_0)%7D%7B(a_2%2Fa_0)s%5E2%2B(a_1%2Fa_0)s%2B1%7D%3D%5Cfrac%7Bb_0%5Comega_n%5E2%7D%7Bs%5E2%2B2%5Czeta%5Comega_ns%2B%5Comega_n%5E2%7D%24)
 
+[Voltar ao Topo](#Sumário)
 ## Sistemas de Primeira Ordem
 
 ![](https://render.githubusercontent.com/render/math?math=%24G(s)%3D%5Cfrac%7B%5Ctheta_o(s)%7D%7B%5Ctheta_i(s)%7D%3D%5Cfrac%20%7Bb_0%7D%7Ba_1s%2Ba_0%7D%3D%5Cfrac%7Bb_0%2Fa_0%7D%7B(a_1%2Fa_0)%2B1%7D%3D%5Cfrac%7BG%7D%7B%5Ctau%20s%2B1%7D%24)
@@ -80,6 +80,7 @@ Semana: Resumo
 
 ![Untitled](../Imagens/Untitled%202.png)
 
+[Voltar ao Topo](#Sumário)
 ## Sistemas de Segunda Ordem
 
 ![](https://render.githubusercontent.com/render/math?math=%24G(s)%3D%5Cfrac%7B%5Ctheta_o(s)%7D%7B%5Ctheta_i(s)%7D%3D%5Cfrac%7Bb_0%7D%7Ba_2s%5E2%2Ba_1s%2Ba_0%7D%3D%5Cfrac%7B(b_0%2Fa_0)%7D%7B(a_2%2Fa_0)s%5E2%2B(a_1%2Fa_0)s%2B1%7D%3D%5Cfrac%7Bb_0%5Comega_n%5E2%7D%7Bs%5E2%2B2%5Czeta%5Comega_ns%2B%5Comega_n%5E2%7D%24)
@@ -90,13 +91,13 @@ Característica da resposta de sistemas de 2ª ordem:
 
 **Amortecimento** 
 
-![](https://render.githubusercontent.com/render/math?math=%24%CE%B6%20%3E%201%24) : Super amortecida 
+![](https://render.githubusercontent.com/render/math?math=%24%5Czeta%20%3E%201%24): Super amortecida 
 
-![](https://render.githubusercontent.com/render/math?math=%24%CE%B6%20%3D%201%24) : Criticamente Amortecida
+![](https://render.githubusercontent.com/render/math?math=%24%5Czeta%20%3D%201%24) : Criticamente Amortecida
 
-![](https://render.githubusercontent.com/render/math?math=%240%20%3C%20%CE%B6%20%3C%201%24) : Sub amortecida  
+![](https://render.githubusercontent.com/render/math?math=%240%20%3C%20%5Czeta%20%3C%201%24) : Sub amortecida  
 
-![](https://render.githubusercontent.com/render/math?math=%24%CE%B6%20%3D%200%24) : Não Amortecida
+![](https://render.githubusercontent.com/render/math?math=%24%5Czeta%20%3D%200%24) : Não Amortecida
 
 **Raízes**
 
@@ -112,14 +113,15 @@ Característica da resposta de sistemas de 2ª ordem:
 
 ![Untitled](../Imagens/Untitled%203.png)
 
-$\theta_o=b_0[1-\sin\omega_nt]$
+Super amortecida : ![](https://render.githubusercontent.com/render/math?math=%24%5Ctheta_o%3Db_0%5B1-%5Csin%5Comega_nt%5D%24)
 
- $\theta_o=b_0[1-\frac1{\sqrt{(1-\zeta^2)}}e^{-(\zeta\omega_n)t}\sin(\omega_n\sqrt{1-\zeta^2}\space t+\phi)]$,$\cos \phi = \zeta$
+Criticamente Amortecida : ![](https://render.githubusercontent.com/render/math?math=%20%24%5Ctheta_o%3Db_0%5B1-%5Cfrac1%7B%5Csqrt%7B(1-%5Czeta%5E2)%7D%7De%5E%7B-(%5Czeta%5Comega_n)t%7D%5Csin(%5Comega_n%5Csqrt%7B1-%5Czeta%5E2%7D%5Cspace%20t%2B%5Cphi)%5D%24%2C%24%5Ccos%20%5Cphi%20%3D%20%5Czeta%24)
 
- $\theta_o=b_0[1-e^{(-\omega_n)t}-\omega_nte^{(-\omega_n)t}]$
+Sub amortecida : ![](https://render.githubusercontent.com/render/math?math=%24%5Ctheta_o%3Db_0%5B1-e%5E%7B(-%5Comega_n)t%7D-%5Comega_nte%5E%7B(-%5Comega_n)t%7D%5D%24)
 
- $\theta_0=1+[\mp\frac{b_0\zeta}{2\sqrt{(\zeta^2-1)}}-\frac{b_0}{2}]e^{(-\zeta\omega_n\pm\omega_n\sqrt{(\zeta^2-1)})t}$
+Não Amortecida : ![](https://render.githubusercontent.com/render/math?math=%20%24%5Ctheta_0%3D1%2B%5B%5Cmp%5Cfrac%7Bb_0%5Czeta%7D%7B2%5Csqrt%7B(%5Czeta%5E2-1)%7D%7D-%5Cfrac%7Bb_0%7D%7B2%7D%5De%5E%7B(-%5Czeta%5Comega_n%5Cpm%5Comega_n%5Csqrt%7B(%5Czeta%5E2-1)%7D)t%7D%24)
 
+[Voltar ao Topo](#Sumário)
 ## Medidas de Desempenho Para Sistemas de Segunda Ordem
 
 - **Tempo de pico**  ![](https://render.githubusercontent.com/render/math?math=%24%5Comega%20t_P%24%20%3D%20%24%5Cpi%24)  : Tempo gasto para a resposta ir de 0 ao primeiro valor de pico. Tempo para a resposta oscilatória completar um meio ciclo, ![](https://render.githubusercontent.com/render/math?math=%24%5Cpi%24)
@@ -134,6 +136,7 @@ $\theta_o=b_0[1-\sin\omega_nt]$
 - **Período**: ![](https://render.githubusercontent.com/render/math?math=%242%5Cpi%24%20%2F%20%24%5Comega_n%24)
 - **Número de Oscilações** = tempo de estabilização / período : ![](https://render.githubusercontent.com/render/math?math=%242%2F%5Cpi%24%20%24%5Csqrt%7B(%5Cfrac%7B1%7D%7B%5Czeta%5E2%7D-1)%7D%24)
 
+[Voltar ao Topo](#Sumário)
 ## Classificação dos Sistemas
 
 - O sistema em malha fechada é considerado tendo realimentação unitária
@@ -148,6 +151,7 @@ $\theta_o=b_0[1-\sin\omega_nt]$
 
 - ![](https://render.githubusercontent.com/render/math?math=%24q%24) é o valor chamado **tipo** ou **classe do sistema.** Identifica o número de fatores  ![](https://render.githubusercontent.com/render/math?math=%241%2Fs%24) na , ou número de integradores função de transferência de malha aberta
 
+[Voltar ao Topo](#Sumário)
 ## Erro em Regime Permanente
 
 - **Erro**: A diferença entre o sinal de saída de saída, a referência, e o sinal de saída real que ocorre no sistema:
@@ -211,6 +215,7 @@ $\theta_o=b_0[1-\sin\omega_nt]$
 
 - Pelo principio da superposição, o erro em regime permanente é igual a soma dos erros de cada segmento do sinal de entrada
 
+[Voltar ao Topo](#Sumário)
 ## Pólos e Zeros
 
 - A função de transferência em malha fechada pode ser representada como:
@@ -230,6 +235,7 @@ $\theta_o=b_0[1-\sin\omega_nt]$
 
 ![Untitled](../Imagens/Untitled%205.png)
 
+[Voltar ao Topo](#Sumário)
 ## Estabilidade
 
 - Um sistema é **estável** se para entradas finitas (limitadas) ele produz saídas limitadas (limite, saídas que tendem a algum valor)
@@ -364,6 +370,7 @@ Como a constante de tempo integral ![](https://render.githubusercontent.com/rend
 - O fator  ![](https://render.githubusercontent.com/render/math?math=%241%2Fs%24)  aumenta o tipo de 1
 - Na prática, é utilizado um compensador em avanço e não um controlador PID ideal
 
+[Voltar ao Topo](#Sumário)
 ## Ajustes de Ganho de Controlador
 
 - **Sintonização:** Processo de selecionar a melhor regulação para o controlador
@@ -393,6 +400,7 @@ Como a constante de tempo integral ![](https://render.githubusercontent.com/rend
 
 ![Untitled](../Imagens/Untitled%2021.png)
 
+[Voltar ao Topo](#Sumário)
 ## Realimentação de Velocidade
 
 - Sistemas envolvendo o posicionamento de algum objeto, por exemplo, o braço de um robô, uma característica importante é o sistema responder rapidamente a erros e não produzir oscilações excessivas ou sobre-sinais
