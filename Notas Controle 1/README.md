@@ -359,11 +359,9 @@ Não Amortecida : ![](https://render.githubusercontent.com/render/math?math=%20%
 
 Tem saída: ![](https://render.githubusercontent.com/render/math?math=%24K_Pe%2BK_I%5Cint%5Climits_%7B0%7D%5E%7B1%7Dedt%2BK_D%5Cfrac%7Bde%7D%7Bdt%7D%24)
 
-- **Função de Transferência do Controlador**: ![](https://render.githubusercontent.com/render/math?math=%20%24G_C(s)%3DK_P(1%2B%5Cfrac%7B1%7D%7B%5Ctau_is%7D%2B%5Ctau_%7BDs%7D%24)
-
 Como a constante de tempo integral ![](https://render.githubusercontent.com/render/math?math=%24%5Ctau_i%24) é  ![](https://render.githubusercontent.com/render/math?math=%24K_P%2FK_I%24) e a constante de tempo derivatia ![](https://render.githubusercontent.com/render/math?math=%24%5Ctau_D%24%20%C3%A9%20%24K_P%2FK_D%24), então:
 
-- **Função de Transferência do Controlador**: ![](https://render.githubusercontent.com/render/math?math=%24G_C(s)%3DK_P(1%2B%5Cfrac%7B1%7D%7B%5Ctau_is%7D%2B%5Ctau_Ds%24)
+- **Função de Transferência do Controlador**: ![](https://render.githubusercontent.com/render/math?math=%20%24G_C(s)%3DK_P(1%2B%5Cfrac%7B1%7D%7B%5Ctau_is%7D%2B%5Ctau_Ds%24)
 - **Função de Transferência de Malha Aberta**: ![](https://render.githubusercontent.com/render/math?math=%24G_O(s)%3D%5Cfrac%7BK_P(%5Ctau_iS%2B1%2B%5Ctau_i%5Ctau_ds%5E2))G_P(s)%7D%7B%5Ctau_is%7D%24)
 
 - O controlador PID aumenta em 2 o número de zeros e de 1 o número de pólos.
