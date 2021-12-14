@@ -1,8 +1,10 @@
 
 
-Data: 17/08/2021
-Disciplina: Controle 1
-Semana: Resumo
+# Resumo 
+
+Anotações realizadas durante a disciplina 1001348 - CONTROLE 1 baseadas na bibliografia:
+
+BOLTON, W. Engenharia de Controle. São Paulo/SP: Makron Books do Brasil Editora Ltda., 1995.
 
 ## Sumário
 
