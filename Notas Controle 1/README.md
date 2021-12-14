@@ -133,7 +133,7 @@ Não Amortecida : ![](https://render.githubusercontent.com/render/math?math=%20%
 - **Tempo de Estabilização** ![](https://render.githubusercontent.com/render/math?math=%24t_s%24)  : Tempo gasto para que as oscilações desapareçam, resposta diminuir e ficar dentro de um percentual
 - **Tempo de Estabilização ![](https://render.githubusercontent.com/render/math?math=%24t_s%24) 2% do valor final:**  ![](https://render.githubusercontent.com/render/math?math=%24t_s%24%20%3D%20%244%20%2F%20%5Czeta%5Comega_n%24)
 - **Tempo de Estabilização ![](https://render.githubusercontent.com/render/math?math=%24t_s%24) 5% do valor final:**  ![](https://render.githubusercontent.com/render/math?math=%24t_s%24%20%3D%20%243%20%2F%20%5Czeta%5Comega_n%24)
-- **Período**: ![](https://render.githubusercontent.com/render/math?math=%20%242%5Cpi%20%2F%20%5Comega_n%24)
+- **Período**: ![](https://render.githubusercontent.com/render/math?math=%242%5Cpi%2F%5Comega_n%24)
 - **Número de Oscilações** = tempo de estabilização / período : ![](https://render.githubusercontent.com/render/math?math=%242%2F%5Cpi%24%20%24%5Csqrt%7B(%5Cfrac%7B1%7D%7B%5Czeta%5E2%7D-1)%7D%24)
 
 [Voltar ao Topo](#Sumário)
@@ -361,7 +361,7 @@ Tem saída: ![](https://render.githubusercontent.com/render/math?math=%24K_Pe%2B
 
 Como a constante de tempo integral ![](https://render.githubusercontent.com/render/math?math=%24%5Ctau_i%24) é  ![](https://render.githubusercontent.com/render/math?math=%24K_P%2FK_I%24) e a constante de tempo derivatia ![](https://render.githubusercontent.com/render/math?math=%24%5Ctau_D%24%20%C3%A9%20%24K_P%2FK_D%24), então:
 
-- **Função de Transferência do Controlador**: ![](https://render.githubusercontent.com/render/math?math=%20%24G_C(s)%3DK_P(1%2B%5Cfrac%7B1%7D%7B%5Ctau_is%7D%2B%5Ctau_Ds%24)
+- **Função de Transferência do Controlador**: ![](https://render.githubusercontent.com/render/math?math=%24G_C(s)%3DK_P%2B%5Cfrac%7BK_I%7D%7Bs%7D%2BK_Ds%24)
 - **Função de Transferência de Malha Aberta**: ![](https://render.githubusercontent.com/render/math?math=%24G_O(s)%3D%5Cfrac%7BK_P(%5Ctau_iS%2B1%2B%5Ctau_i%5Ctau_ds%5E2))G_P(s)%7D%7B%5Ctau_is%7D%24)
 
 - O controlador PID aumenta em 2 o número de zeros e de 1 o número de pólos.
