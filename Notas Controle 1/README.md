@@ -327,7 +327,7 @@ Não Amortecida : ![](https://render.githubusercontent.com/render/math?math=%20%
 - O controle derivativo é insensível a sinais de erro constantes ou de variação lenta, é usado em combinação com outras formas de controle
 - A saída é proporcional à taxa de variação do erro
 
-![Untitled](../Imagens/Untitled 2015.png)
+![Untitled](../Imagens/Untitled%2015.png)
 
 - **Sistema com Controle Derivativo**:
 
@@ -359,7 +359,7 @@ Não Amortecida : ![](https://render.githubusercontent.com/render/math?math=%20%
 
 Tem saída: ![](https://render.githubusercontent.com/render/math?math=%24K_Pe%2BK_I%5Cint%5Climits_%7B0%7D%5E%7B1%7Dedt%2BK_D%5Cfrac%7Bde%7D%7Bdt%7D%24)
 
-- **Função de Transferência do Controlador**: ![](https://render.githubusercontent.com/render/math?math=%24G_C(s)%3DK_P%2B%5Cfrac%7BK_I%7D%7Bs%7D%2BK_Ds%24)
+- **Função de Transferência do Controlador**: ![](https://render.githubusercontent.com/render/math?math=%20%24G_C(s)%3DK_P(1%2B%5Cfrac%7B1%7D%7B%5Ctau_is%7D%2B%5Ctau_%7BDs%7D%24)
 
 Como a constante de tempo integral ![](https://render.githubusercontent.com/render/math?math=%24%5Ctau_i%24) é  ![](https://render.githubusercontent.com/render/math?math=%24K_P%2FK_I%24) e a constante de tempo derivatia ![](https://render.githubusercontent.com/render/math?math=%24%5Ctau_D%24%20%C3%A9%20%24K_P%2FK_D%24), então:
 
