@@ -35,19 +35,19 @@ $G(s)=\frac{\theta_o(s)}{\theta_i(s)}=\frac {b_0}{a_1s+a_0}=\frac{b_0/a_0}{(a_1/
 
  
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled.png)
+![Untitled](../Imagens Controle 1/Untitled.png)
 
 ### Entrada Rampa para Sistema de Primeira Ordem
 
 - **Reposta**: $\theta_o = G[t-\tau(1-e^{-t/\tau})]$
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%201.png)
+![Untitled](../Imagens Controle 1/Untitled%201.png)
 
 ### Entrada Impulso para um Sistema de Primeira Ordem
 
 - **Resposta:** $\theta_o = G(1/\tau)e^{-t/\tau}$
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%202.png)
+![Untitled](../Imagens Controle 1/Untitled%202.png)
 
 ## Sistemas de Segunda Ordem
 
@@ -89,7 +89,7 @@ Não Amortecida
 
  **Resposta**
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%203.png)
+![Untitled](../Imagens Controle 1/Untitled%203.png)
 
 $\theta_o=b_0[1-\sin\omega_nt]$
 
@@ -133,7 +133,7 @@ $\frac{K(s^m+a_{m-1}s^{m-1}+a_{m-2}s^{m-2}+...+a_1s+a_0)}{s^q(s^n+b_{n-1}s^{n-1}
 
 $E(s)=\theta_i(s)-\theta_o(s)$
 
-![Untitled.png](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%204.png)
+![Untitled.png](../Imagens Controle 1/Untitled%204.png)
 
 ### Classificação dos Sistemas
 
@@ -207,7 +207,7 @@ $G(s)=\frac{K(s+z_1)(s+z_2)...(s+z_m)}{(s+p_1)(s+p_2)...(s+p_n)}$
 - A posição de um **zero** é marcada por um $O$
 - O gráfico bidimensional é chamado plano $s$
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%205.png)
+![Untitled](../Imagens Controle 1/Untitled%205.png)
 
 ## Estabilidade
 
@@ -222,13 +222,13 @@ $G(s)=\frac{K(s+z_1)(s+z_2)...(s+z_m)}{(s+p_1)(s+p_2)...(s+p_n)}$
 
 ### Saídas para diferentes Pólos a uma Entrada Impulso
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%206.png)
+![Untitled](../Imagens Controle 1/Untitled%206.png)
 
 ### Saídas para diferentes Pólos a uma Entrada Degrau
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%207.png)
+![Untitled](../Imagens Controle 1/Untitled%207.png)
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%208.png)
+![Untitled](../Imagens Controle 1/Untitled%208.png)
 
 ## Controle Proporcional
 
@@ -240,11 +240,11 @@ $\text{Saída}=K_Pe$
 - O controlador é um amplificador com ganho constante
 - Um ganho constante tende a existir somente para uma certa faixa de erros, chamada **banda proporcional**
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%209.png)
+![Untitled](../Imagens Controle 1/Untitled%209.png)
 
 - **Sistema com Controle Proporcional**:
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%2010.png)
+![Untitled](../Imagens Controle 1/Untitled%2010.png)
 
 - **Função de Transferência**: $G_o(s)=K_PG_P(s)$
 - Altera os pólos da função
@@ -260,11 +260,11 @@ $\text{Saída}=K_I\int\limits_0^1e \space dt$
 - A integral é a área da curva do sinal do erro e aumenta de maneira regular a medida que o erro aumenta
 - A saída é proporcional ao acúmulo de efeitos de erros em momentos anteriores
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%2011.png)
+![Untitled](../Imagens Controle 1/Untitled%2011.png)
 
 - **Sistema com Controle Integral**:
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%2012.png)
+![Untitled](../Imagens Controle 1/Untitled%2012.png)
 
 - **Função de Transferência**: $G_o(s)=(\frac{K_I}{s})G_P(s)$
 - **Vantagem**: O controlador introduz o termo $1/s$ no ramo direto → Aumenta o tipo do sistema em 1 → Se o sistema é do tipo 0, o erro em regime permanente desaparece para uma entrada degrau
@@ -280,11 +280,11 @@ $\text{Saída}=K_Pe+K_I\int\limits_0^tedt$
 - $\tau_I=K_P/K_I$ é a **constante de tempo integral**
 - A saída do controlador quando existe um erro em degrau
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%2013.png)
+![Untitled](../Imagens Controle 1/Untitled%2013.png)
 
 **Sistema com Controle Integral + Proporcional:**
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%2014.png)
+![Untitled](../Imagens Controle 1/Untitled%2014.png)
 
 - **Função de Transferência**: $G_o(s)=(\frac{K_P[s+(1/\tau_I)]}{s})G_P(s)$
 - **Vantagem**: O fator $1/s$ aumenta o tipo do sistema para 1 e  remove a possibilidade de um erro em regime permanente para uma entrada degrau
@@ -300,11 +300,11 @@ $\text{Saída}=K_I\int\limits_0^1e \space dt$
 - O controle derivativo é insensível a sinais de erro constantes ou de variação lenta, é usado em combinação com outras formas de controle
 - A saída é proporcional à taxa de variação do erro
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%2015.png)
+![Untitled](../Imagens Controle 1/Untitled 2015.png)
 
 - **Sistema com Controle Derivativo**:
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%2016.png)
+![Untitled](../Imagens Controle 1/Untitled%2016.png)
 
 - **Função de Transferência**: $G_o(s)=\frac{K_DG_P(s)}{1+K_DsG_P(s)}$
 - **Vantagem**: Usado com outras formas de controle, aumenta a velocidade de correção da resposta de um sistema ao erro
@@ -320,7 +320,7 @@ $\text{Saída}=K_I\int\limits_0^1e \space dt$
 - Sem mudanças no tipo do sistemas e no erro permanente
 - **Sistema com Controle Proporcional + Derivativo:**
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%2017.png)
+![Untitled](../Imagens Controle 1/Untitled%2017.png)
 
 [Voltar ao Topo](https://www.notion.so/Resumo-Disciplina-f6daa7f509974998b4d0e7f46c2629f2)
 
@@ -328,7 +328,7 @@ $\text{Saída}=K_I\int\limits_0^1e \space dt$
 
 - Um controlador proporcionai mais derivativo mais integrativo (PID), ou controlador de três termos, em um sistema da forma:
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%2018.png)
+![Untitled](../Imagens Controle 1/Untitled%2018.png)
 
 Tem saída: $K_Pe+K_I\int\limits_{0}^{1}edt+K_D\frac{de}{dt}$
 
@@ -354,14 +354,14 @@ Como a constante de tempo integral $\tau_i$ é $K_P/K_I$ e a constante de tempo 
 - O sinal de teste deve ser o menor possível
 - A curva do sinal medido é chamada **curva de reação do processo**
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%2019.png)
+![Untitled](../Imagens Controle 1/Untitled%2019.png)
 
 - O sinal de teste P é expresso como variação na porcentagem de correção
 - A variável medida é expressa como a porcentagem da faixa de escala total
 - A tangente exibe o gradiente máximo da curva
 - O tempo que o sinal de teste começa e a tangente intercepta o eixo do tempo é chamado **tempo de atraso** L
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%2020.png)
+![Untitled](../Imagens Controle 1/Untitled%2020.png)
 
 ### Método do Ciclo Máximo
 
@@ -370,7 +370,7 @@ Como a constante de tempo integral $\tau_i$ é $K_P/K_I$ e a constante de tempo 
 - Pequenos são distúrbios são aplicados enquanto isso, até gerar oscilações
 - O valor crítico da constante $K_{PC}$ é o observado e o período $T_C$ das oscilações
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%2021.png)
+![Untitled](../Imagens Controle 1/Untitled%2021.png)
 
 ## Realimentação de Velocidade
 
@@ -381,7 +381,7 @@ Como a constante de tempo integral $\tau_i$ é $K_P/K_I$ e a constante de tempo 
 - $K_V$ é uma constante, o ganho da realimentação
 - **Realimentação de Posição** é usada para designar realimentação do valor da saída, os termos aparecem de denominações anteriores para sistemas de controle de posição de objetos
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%2022.png)
+![Untitled](../Imagens Controle 1/Untitled%2022.png)
 
 - A **realimentação de velocidade** introduz  um termo $G_P(s)K_Vs$ no denominador, e portanto, na equação característica. A estabilidade relativa aumenta, o amortecimento aumentou para a mesma frequência angular natural, e esta aumentou para o mesmo amortecimento
 - O **sobre sinal percentual** é: $\exp{(\frac{-\cos\phi}{\sqrt{1-\cos^2\phi}})}\times100\%=\exp{(\frac{1}{\tg\phi})}\times100\%$
@@ -389,4 +389,4 @@ Como a constante de tempo integral $\tau_i$ é $K_P/K_I$ e a constante de tempo 
 
 ## Parâmetros
 
-![Untitled](Resumo%20Disciplina%20959244f5ac23436daea3904d5ff61812/Untitled%2023.png)
+![Untitled](../Imagens Controle 1/Untitled%2023.png)
