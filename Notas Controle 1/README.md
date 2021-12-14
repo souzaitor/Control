@@ -133,7 +133,7 @@ Não Amortecida : ![](https://render.githubusercontent.com/render/math?math=%20%
 - **Tempo de Estabilização** ![](https://render.githubusercontent.com/render/math?math=%24t_s%24)  : Tempo gasto para que as oscilações desapareçam, resposta diminuir e ficar dentro de um percentual
 - **Tempo de Estabilização ![](https://render.githubusercontent.com/render/math?math=%24t_s%24) 2% do valor final:**  ![](https://render.githubusercontent.com/render/math?math=%24t_s%24%20%3D%20%244%20%2F%20%5Czeta%5Comega_n%24)
 - **Tempo de Estabilização ![](https://render.githubusercontent.com/render/math?math=%24t_s%24) 5% do valor final:**  ![](https://render.githubusercontent.com/render/math?math=%24t_s%24%20%3D%20%243%20%2F%20%5Czeta%5Comega_n%24)
-- **Período**: ![](https://render.githubusercontent.com/render/math?math=%242%5Cpi%24%20%2F%20%24%5Comega_n%24)
+- **Período**: ![](https://render.githubusercontent.com/render/math?math=%20%24%5Cfrac%7B2%5Cpi%7D%7B%5Comega_n%7D%24)
 - **Número de Oscilações** = tempo de estabilização / período : ![](https://render.githubusercontent.com/render/math?math=%242%2F%5Cpi%24%20%24%5Csqrt%7B(%5Cfrac%7B1%7D%7B%5Czeta%5E2%7D-1)%7D%24)
 
 [Voltar ao Topo](#Sumário)
